@@ -21,17 +21,39 @@
 				<h1>Chipetlo</h1>
 			</div>
 		</div>
-		<button onclick="flourTortilla()">Flour Tortilla</button>
-		<p id="FlourTortilla"></p>
+		
 		<script>
+		img {
+				opacity: 0;
+				filter: alpha(opacity=0);
+			}
+		</script>
+		
+		<p>Step 1: <button onclick="flourTortilla()">Flour Tortilla</button>
+		<button onclick="cornTortilla()">Corn Tortilla</button></p>
+		
+		<p>Step 2: <button onclick="blackBeans">
+		<img id="BlackBeans" width='0' length='0' src="OYATYV.github.io/BlackBeans.png" alt="Black Beans">
+		
+		<script>
+			//Canvas Setup
 			function setup(){
 				createCanvas(1000,1000);
 			}
+			
+			//Making a Flour Tortilla
 			function flourTortilla() {
-				//document.getElementById("FlourTortilla").innerHTML;
-				//function draw() {
-					ellipse(200, 200, 300, 300)
-				}
+				fill(255, 255, 204)
+				ellipse(200, 200, 300, 300);
+			}
+			//Making a Corn Tortilla
+			function cornTortilla() {
+				fill(255, 204, 0);
+				ellipse(200, 200, 300, 300);
+			}
+			function blackBeans() {
+				var img = document.getElementById("BlackBeans");
+				ctx.drawImage(img, 10, 10);
 			}
 		</script>
 	</body>
