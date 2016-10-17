@@ -32,7 +32,7 @@
 		<p>Step 1: <button onclick="flourTortilla()">Flour Tortilla</button>
 		<button onclick="cornTortilla()">Corn Tortilla</button></p>
 		
-		<p>Step 2: <button onclick="blackBeans">
+		<p>Step 2: <button onclick="blackBeans">Black Beans</button>
 		<img id="BlackBeans" width='0' length='0' src="OYATYV.github.io/BlackBeans.png" alt="Black Beans">
 		
 		<script>
@@ -51,10 +51,12 @@
 				fill(255, 204, 0);
 				ellipse(200, 200, 300, 300);
 			}
+		</script>
+		<script>
 			function blackBeans() {
-				var img = document.getElementById("BlackBeans");
-				ctx.drawImage(img, 10, 10);
-			}
+					var img = document.getElementById("BlackBeans");
+					ctx.drawImage(img, 10, 10);
+				}
 		</script>
 	</body>
 </html>
